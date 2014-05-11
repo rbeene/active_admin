@@ -149,7 +149,7 @@ module ActiveAdmin
     private
 
     def method_for_find
-      resources_configuration[:self][:finder] || :"find_by_#{resource_class.primary_key}"
+      resources_configuration[:self][:finder] || "find_by_id"
     end
 
     def default_csv_builder
